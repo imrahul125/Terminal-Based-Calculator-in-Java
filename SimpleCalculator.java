@@ -14,6 +14,10 @@ public class SimpleCalculator {
     }
 
     static int div(int n1, int n2) {
+        if (n2 == 0) {
+            System.out.println("Error: Cannot divide by zero!");
+            return 0;
+        }
         return n1 / n2;
     }
 
